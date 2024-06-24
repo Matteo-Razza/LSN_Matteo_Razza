@@ -1,0 +1,17 @@
+SIMULATION_TYPE        2/3    1.0    0.0
+RESTART                0
+TEMP                   1.0
+NPART                  50
+RHO                    1.0
+R_CUT                  0.0
+DELTA                  0.0
+NBLOCKS                20
+NSTEPS                 20000
+
+ENDINPUT
+
+if(_sim_type == 0)      coutf << "LJ MOLECULAR DYNAMICS (NVE) SIMULATION"  << endl;
+else if(_sim_type == 1) coutf << "LJ MONTE CARLO (NVT) SIMULATION"         << endl;
+else if(_sim_type == 2) coutf << "ISING 1D MONTE CARLO (MRT^2) SIMULATION" << endl;
+else if(_sim_type == 3) coutf << "ISING 1D MONTE CARLO (GIBBS) SIMULATION" << endl;
+SIMULATION_TYPE        2    _J    _H

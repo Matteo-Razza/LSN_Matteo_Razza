@@ -1,0 +1,17 @@
+SIMULATION_TYPE        0
+RESTART                0
+TEMP                   0.8
+NPART                  108
+RHO                    1.1
+R_CUT                  2.2
+DELTA                  0.0005
+NBLOCKS                50
+NSTEPS                 2000
+
+ENDINPUT
+
+SIMULATION_TYPE 0 = molecular dynamics
+RESTART 0 = restart from 0 
+RESTART 1 = restart from previous simulation 
+TEMP in Lennard-Jones unit
+DELTA = 0.0005 --> dt = 0.109 fs
